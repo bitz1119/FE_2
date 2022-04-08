@@ -1,6 +1,7 @@
-let arr = [5,4,3,2,1];
+let arr = [5,4,3,2,1,10];
+let k = 3;
 
-for (let i = 0; i < arr.length-1;i++){
+for (let i = 0; i < k ;i++){
     // if required swap all subsequent element in array
     for (let j = 0; j < arr.length-1;j++){
         // should i swap
@@ -15,4 +16,4 @@ for (let i = 0; i < arr.length-1;i++){
 }
 
 
-console.log(arr);
+console.log(arr[arr.length-k]);
