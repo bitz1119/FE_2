@@ -25,5 +25,20 @@ function merge(arr1, arr2) {
 }
 
 
-console.log(merge([1,5,6,10],[2,3,4,7,8,9]));
+function mergeSort(arr){
+    if(arr.length <= 1){
+        return arr;
+    }
+
+    let mid = Math.ceil(arr.length/2);
+    let arr1 = arr.slice(0,mid);
+    let arr2 = arr.slice(mid,arr.length);
+
+    arr1 = mergeSort(arr1);
+    arr2 = mergeSort(arr2);
+
+    return merge(arr1,arr2);
+}
+
+console.log(mergeSort([4,3,5,6,1,2,9]))
 
