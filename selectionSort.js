@@ -1,10 +1,10 @@
-let arr = [3,4,5,8,1,2,3];
+let arr=[{'name':'Ram','salary':100000},{'name':'Ramesh','salary':10000},{'name':'Rakesh','salary':500000},{'name':'Riya','salary':650000},{'name':'Rithik','salary':45000},{'name':'Ritesh','salary':230000}]
 
 // return minIndex
 function findMin(arr, startIndex){
     let minIndexTillNow = startIndex;
     for(let i = startIndex; i < arr.length; i++){
-        if(arr[minIndexTillNow] > arr[i]){
+        if(arr[minIndexTillNow].salary > arr[i].salary){
             minIndexTillNow = i;
         }
     }
@@ -22,4 +22,10 @@ for(let i = 0;i<arr.length;i++){
     arr[minIndex] = temp;
 }
 
-console.log(arr);
+console.log(arr[arr.length-2].name);
+
+
+// a.localeCompare(b)
+// if a should come before b --> -1
+// if b should come before a --> 1
+// if b is same as a --> 0
