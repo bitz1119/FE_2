@@ -39,7 +39,7 @@ addNode(5,["l","r"])
 addNode(7,["r","l"])
 addNode(8,["r","r"])
 
-console.log(root)
+// console.log(root)
 
 
 function preorder(parent){
@@ -50,4 +50,16 @@ function preorder(parent){
     preorder(parent.left);
     preorder(parent.right);
 }
-preorder(root);
+
+
+function inorder(parent){
+    if(parent === null){
+        return;
+    }
+    inorder(parent.left);
+    console.log(parent.val);
+    inorder(parent.right);
+
+}
+
+inorder(root);
