@@ -42,3 +42,12 @@ addNode(8,["r","r"])
 console.log(root)
 
 
+function preorder(parent){
+    if(parent === null){
+        return;
+    }
+    console.log(parent.val);
+    preorder(parent.left);
+    preorder(parent.right);
+}
+preorder(root);
