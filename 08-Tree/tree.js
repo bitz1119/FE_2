@@ -62,4 +62,14 @@ function inorder(parent){
 
 }
 
-inorder(root);
+
+function postorder(parent){
+    if(parent === null){
+        return;
+    }
+    postorder(parent.left);
+    postorder(parent.right);
+    console.log(parent.val);
+}
+
+postorder(root);
