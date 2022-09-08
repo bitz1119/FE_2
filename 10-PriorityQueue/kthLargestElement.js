@@ -1,4 +1,11 @@
-class PriorityQueue{
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+
+
+ class PriorityQueue{
 
     constructor(){
         this.pq = [];
@@ -101,42 +108,20 @@ class PriorityQueue{
     }
 }
 
-let arr = [2,7,26,25,19,17,1,90,3,36];
-let pq = new PriorityQueue();
-
-for (let i = 0;i < arr.length;i++){
-    pq.addElement(arr[i]);
-}
-
-pq.display()
-
-let k = 5;
-for (let i = 0;i < 4;i++){
-    pq.removeElement();
-}
-
-console.log(pq.pq[0]);
-
-// let pq = new PriorityQueue();
-// pq.addElement(5);
-// pq.addElement(10);
-// pq.addElement(12);
-// pq.addElement(3);
-// pq.addElement(4);
-
-// console.log(pq.findHighestAmongParentChild(3));
-// pq.removeElement();
-
-// console.log(pq.isLeafNode(0));
-// console.log(pq.findHighestAmongParentChild(0));
-
-// pq.display();
 
 
-// pq.removeElement();
+var findKthLargest = function(nums, k) {
+    let pq = new PriorityQueue();
 
-// pq.display();
-// pq.removeElement();
+    for (let i = 0;i < nums.length;i++){
+        pq.addElement(nums[i]);
+    }
 
 
-// pq.display();
+    for (let i = 0;i < (k-1);i++){
+        pq.removeElement();
+    }
+
+    return pq.pq[0];
+
+};
