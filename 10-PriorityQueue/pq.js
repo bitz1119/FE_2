@@ -34,7 +34,7 @@ class PriorityQueue{
     }
 
     isLeafNode(parent){
-        if(parent*2+2 > this.pq.length - 1){
+        if(parent*2+1 > this.pq.length - 1){
             return true;
         }
         return false;

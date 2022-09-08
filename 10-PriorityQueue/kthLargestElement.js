@@ -41,7 +41,7 @@
     }
 
     isLeafNode(parent){
-        if(parent*2+2 > this.pq.length - 1){
+        if(parent*2+1 > this.pq.length - 1){
             return true;
         }
         return false;
@@ -70,6 +70,7 @@
         }
         else{
             let max = Math.max(parent,leftChild);
+            console.log(max,parent,leftChild);
             if(max === parent){
                 return currIndex;
             }
