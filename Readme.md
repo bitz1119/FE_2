@@ -31,3 +31,18 @@ Points to remember
 - [Interview Questions](https://github.com/khan4019/front-end-Interview-Questions)
     - https://github.com/PriontoAbdullah/Frontend-Interview-Preparation-for-Interns-and-Junior-Developers
 - [Interview Experiences](https://www.youtube.com/results?search_query=frontend+interview+experience) 
+
+## Search for job oppurtunities
+- [Relevel Test]()
+- [LinkedIn Jobs](https://www.linkedin.com/jobs/search)
+- [Angel.co](https://angel.co/jobs)
+- [Hirect](https://www.hirect.in/)
+- [InternShala](intershala.com)
+
+
+## Focus on 4 things 
+- Persverence
+- Honesty
+- Curiosity
+- Professionalism - Gratitude / Appreciation
+
