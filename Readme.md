@@ -4,6 +4,11 @@ Points to remember
 - Make github repo
 - Make notes of it
 
+
+## Step 0
+- Git and Github Pages 
+- HTML CSS - [Freecodecamp](https://www.freecodecamp.org/learn/)
+
 ## Step 1 - JS Concepts
 [Namaster JS](https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP)
 
